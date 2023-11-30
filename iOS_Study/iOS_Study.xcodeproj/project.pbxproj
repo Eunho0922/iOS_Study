@@ -18,6 +18,8 @@
 		D140D8F72B16B72A00585AE7 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F62B16B72A00585AE7 /* SnapKit-Dynamic */; };
 		D140D8F92B16B73D00585AE7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F82B16B73D00585AE7 /* Then */; };
 		D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */; };
+		D140D9002B18259300585AE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8FF2B18259300585AE7 /* BaseViewController.swift */; };
+		D140D9022B1826B600585AE7 /* MinGaGymKitStopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D9012B1826B600585AE7 /* MinGaGymKitStopWatch.swift */; };
 		D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A72B16203800B8DC1F /* AppDelegate.swift */; };
 		D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A92B16203800B8DC1F /* SceneDelegate.swift */; };
 		D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */; };
@@ -29,6 +31,8 @@
 		D140D8E62B16B20200585AE7 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		D140D8E82B16B23700585AE7 /* textFieldErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldErrorType.swift; sourceTree = "<group>"; };
 		D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewModel.swift; sourceTree = "<group>"; };
+		D140D8FF2B18259300585AE7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		D140D9012B1826B600585AE7 /* MinGaGymKitStopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinGaGymKitStopWatch.swift; sourceTree = "<group>"; };
 		D17FE9A42B16203800B8DC1F /* iOS_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17FE9A72B16203800B8DC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D17FE9A92B16203800B8DC1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +72,7 @@
 		D140D8E02B16275700585AE7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				D140D8E52B16B1DE00585AE7 /* TextField */,
+				D140D8FF2B18259300585AE7 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -76,6 +80,7 @@
 		D140D8E12B16276C00585AE7 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				D140D8E52B16B1DE00585AE7 /* TextField */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */,
 				D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */,
+				D140D9012B1826B600585AE7 /* MinGaGymKitStopWatch.swift */,
 			);
 			path = StopWatch;
 			sourceTree = "<group>";
@@ -234,8 +240,10 @@
 				D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */,
 				D140D8E92B16B23700585AE7 /* textFieldErrorType.swift in Sources */,
 				D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */,
+				D140D9022B1826B600585AE7 /* MinGaGymKitStopWatch.swift in Sources */,
 				D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */,
 				D140D8E72B16B20200585AE7 /* CustomTF.swift in Sources */,
+				D140D9002B18259300585AE7 /* BaseViewController.swift in Sources */,
 				D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
