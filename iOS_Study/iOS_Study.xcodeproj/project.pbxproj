@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D140D8E72B16B20200585AE7 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8E62B16B20200585AE7 /* CustomTF.swift */; };
+		D140D8E92B16B23700585AE7 /* textFieldErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8E82B16B23700585AE7 /* textFieldErrorType.swift */; };
+		D140D8EB2B16B30200585AE7 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8EA2B16B30200585AE7 /* RxBlocking */; };
+		D140D8ED2B16B30200585AE7 /* RxBlocking-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8EC2B16B30200585AE7 /* RxBlocking-Dynamic */; };
+		D140D8EF2B16B30200585AE7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8EE2B16B30200585AE7 /* RxCocoa */; };
+		D140D8F12B16B30200585AE7 /* RxCocoa-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F02B16B30200585AE7 /* RxCocoa-Dynamic */; };
+		D140D8F32B16B30200585AE7 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F22B16B30200585AE7 /* RxRelay */; };
+		D140D8F52B16B72A00585AE7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F42B16B72A00585AE7 /* SnapKit */; };
+		D140D8F72B16B72A00585AE7 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F62B16B72A00585AE7 /* SnapKit-Dynamic */; };
+		D140D8F92B16B73D00585AE7 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D140D8F82B16B73D00585AE7 /* Then */; };
+		D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */; };
 		D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A72B16203800B8DC1F /* AppDelegate.swift */; };
 		D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A92B16203800B8DC1F /* SceneDelegate.swift */; };
-		D17FE9AC2B16203800B8DC1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9AB2B16203800B8DC1F /* ViewController.swift */; };
+		D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */; };
 		D17FE9B12B16203A00B8DC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B02B16203A00B8DC1F /* Assets.xcassets */; };
 		D17FE9B42B16203A00B8DC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B22B16203A00B8DC1F /* LaunchScreen.storyboard */; };
-		D17FE9E62B16246900B8DC1F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9E52B16246900B8DC1F /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D140D8E62B16B20200585AE7 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		D140D8E82B16B23700585AE7 /* textFieldErrorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textFieldErrorType.swift; sourceTree = "<group>"; };
+		D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewModel.swift; sourceTree = "<group>"; };
 		D17FE9A42B16203800B8DC1F /* iOS_Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_Study.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D17FE9A72B16203800B8DC1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D17FE9A92B16203800B8DC1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D17FE9AB2B16203800B8DC1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchViewController.swift; sourceTree = "<group>"; };
 		D17FE9B02B16203A00B8DC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D17FE9B32B16203A00B8DC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D17FE9B52B16203A00B8DC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D17FE9E52B16246900B8DC1F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +43,61 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D140D8F32B16B30200585AE7 /* RxRelay in Frameworks */,
+				D140D8F12B16B30200585AE7 /* RxCocoa-Dynamic in Frameworks */,
+				D140D8EF2B16B30200585AE7 /* RxCocoa in Frameworks */,
+				D140D8F92B16B73D00585AE7 /* Then in Frameworks */,
+				D140D8F52B16B72A00585AE7 /* SnapKit in Frameworks */,
+				D140D8EB2B16B30200585AE7 /* RxBlocking in Frameworks */,
+				D140D8F72B16B72A00585AE7 /* SnapKit-Dynamic in Frameworks */,
+				D140D8ED2B16B30200585AE7 /* RxBlocking-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D140D8DF2B16274900585AE7 /* Scence */ = {
+			isa = PBXGroup;
+			children = (
+				D140D8FA2B18226F00585AE7 /* StopWatch */,
+			);
+			path = Scence;
+			sourceTree = "<group>";
+		};
+		D140D8E02B16275700585AE7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D140D8E52B16B1DE00585AE7 /* TextField */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D140D8E12B16276C00585AE7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		D140D8E52B16B1DE00585AE7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				D140D8E62B16B20200585AE7 /* CustomTF.swift */,
+				D140D8E82B16B23700585AE7 /* textFieldErrorType.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		D140D8FA2B18226F00585AE7 /* StopWatch */ = {
+			isa = PBXGroup;
+			children = (
+				D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */,
+				D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */,
+			);
+			path = StopWatch;
+			sourceTree = "<group>";
+		};
 		D17FE99B2B16203800B8DC1F = {
 			isa = PBXGroup;
 			children = (
@@ -77,26 +138,11 @@
 		D17FE9E22B16234D00B8DC1F /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D17FE9E32B1623E100B8DC1F /* MVVM */,
+				D140D8E12B16276C00585AE7 /* Component */,
+				D140D8E02B16275700585AE7 /* Base */,
+				D140D8DF2B16274900585AE7 /* Scence */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		D17FE9E32B1623E100B8DC1F /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				D17FE9E72B16247900B8DC1F /* Button */,
-			);
-			path = MVVM;
-			sourceTree = "<group>";
-		};
-		D17FE9E72B16247900B8DC1F /* Button */ = {
-			isa = PBXGroup;
-			children = (
-				D17FE9AB2B16203800B8DC1F /* ViewController.swift */,
-				D17FE9E52B16246900B8DC1F /* ViewModel.swift */,
-			);
-			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,6 +162,14 @@
 			);
 			name = iOS_Study;
 			packageProductDependencies = (
+				D140D8EA2B16B30200585AE7 /* RxBlocking */,
+				D140D8EC2B16B30200585AE7 /* RxBlocking-Dynamic */,
+				D140D8EE2B16B30200585AE7 /* RxCocoa */,
+				D140D8F02B16B30200585AE7 /* RxCocoa-Dynamic */,
+				D140D8F22B16B30200585AE7 /* RxRelay */,
+				D140D8F42B16B72A00585AE7 /* SnapKit */,
+				D140D8F62B16B72A00585AE7 /* SnapKit-Dynamic */,
+				D140D8F82B16B73D00585AE7 /* Then */,
 			);
 			productName = iOS_Study;
 			productReference = D17FE9A42B16203800B8DC1F /* iOS_Study.app */;
@@ -177,9 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D17FE9AC2B16203800B8DC1F /* ViewController.swift in Sources */,
+				D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */,
+				D140D8E92B16B23700585AE7 /* textFieldErrorType.swift in Sources */,
+				D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */,
 				D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */,
-				D17FE9E62B16246900B8DC1F /* ViewModel.swift in Sources */,
+				D140D8E72B16B20200585AE7 /* CustomTF.swift in Sources */,
 				D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +484,44 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D140D8EA2B16B30200585AE7 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxBlocking;
+		};
+		D140D8EC2B16B30200585AE7 /* RxBlocking-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "RxBlocking-Dynamic";
+		};
+		D140D8EE2B16B30200585AE7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxCocoa;
+		};
+		D140D8F02B16B30200585AE7 /* RxCocoa-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "RxCocoa-Dynamic";
+		};
+		D140D8F22B16B30200585AE7 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RxRelay;
+		};
+		D140D8F42B16B72A00585AE7 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17FE9D32B16228500B8DC1F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		D140D8F62B16B72A00585AE7 /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17FE9D32B16228500B8DC1F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		D140D8F82B16B73D00585AE7 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17FE9D02B16227900B8DC1F /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D17FE99C2B16203800B8DC1F /* Project object */;
 }
