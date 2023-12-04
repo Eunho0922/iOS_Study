@@ -6,7 +6,9 @@ import RxCocoa
 
 class ViewController: UIViewController {
     
-    var timer: Timer?
+//    var timer: Timer?
+    
+    var lapRecords: [String] = []
     
     let disposeBag = DisposeBag()
     
@@ -39,6 +41,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .black
+        
+        stopWatchObject.mainStopwatch.timeUpdateHandler = { [weak self] timeString in
+            self?.stopWatchLabel.text = timeString
+        }
+        
+        stopWatchObject.mainStopwatch.recordUpdateHandler = { lapTimesString in
+            self.lapRecords.append(lapTimesString.last ?? "")
+            print("Lap Records: \(self.lapRecords )")
+        }
         
         layout()
         buttonTap()
@@ -81,11 +92,11 @@ class ViewController: UIViewController {
                     stopWatchObject.stopTimer()
                     stopWatchOnOffButton.backgroundColor = .green
                     stopWatchOnOffButton.setTitle("시작", for: .normal)
-                    
+                    lapRecords.removeAll()
                     stopWatchResetLabButton.setTitle("재설정", for: .normal)
                     stopWatchResetLabButton.isEnabled = true
                 } else {
-                    stopWatchObject.startTimer(label: stopWatchLabel)
+                    stopWatchObject.startTimer()
                     stopWatchOnOffButton.backgroundColor = .red
                     stopWatchResetLabButton.setTitle("랩", for: .normal)
                     stopWatchResetLabButton.backgroundColor = .lightGray
@@ -101,13 +112,15 @@ class ViewController: UIViewController {
                 if isRunning {
                     stopWatchObject.recordTime()
                 } else {
-                    stopWatchObject.resetTimer(label: stopWatchLabel)
+                    stopWatchObject.resetTimer()
+                    stopWatchLabel.text = "00:00.00"
                     isRunning = false
                     stopWatchResetLabButton.setTitle("랩", for: .normal)
                     stopWatchResetLabButton.backgroundColor = .darkGray
-                    stopWatchResetLabButton.isEnabled = true
+                    stopWatchResetLabButton.isEnabled = false
                 }
             })
             .disposed(by: disposeBag)
     }
+    
 }
