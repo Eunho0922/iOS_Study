@@ -35,30 +35,16 @@ class ViewController: UIViewController {
         $0.text = "00:00.00"
     }
     
-    private let stopWatchObject = MindGymStopWatchKit()
+    private let stopwatch = MindGymStopWatchKit()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .black
         
-        stopWatchObject.mainStopwatch.timeUpdateHandler = { [weak self] timeString in
-            self?.stopWatchLabel.text = timeString
-        }
-        
-        stopWatchObject.mainStopwatch.recordUpdateHandler = { lapTimesString in
-            self.lapRecords.append(lapTimesString.last ?? "")
-            print("Lap Records: \(self.lapRecords )")
-        }
-        
+        subscribeToStopwatchUpdates()
         layout()
         buttonTap()
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
-        stopWatchObject.stopTimer()
     }
     
     private func layout() {
@@ -83,20 +69,41 @@ class ViewController: UIViewController {
         }
     }
     
+    private func subscribeToStopwatchUpdates() {
+        
+        stopwatch.mainStopwatch.timeUpdate
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] timeString in
+                self?.stopWatchLabel.text = timeString
+            })
+            .disposed(by: disposeBag)
+
+        stopwatch.mainStopwatch.recordUpdate
+            .observe(on: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] lapTimes in
+                self?.lapRecords = lapTimes
+                
+                self?.lapRecords.append(lapTimes.last ?? "")
+                print("Lap record : \(String(describing: self?.lapRecords ?? nil))")
+                    
+            })
+            .disposed(by: disposeBag)
+    }
+    
     private func buttonTap() {
         var isRunning: Bool = false
         
         stopWatchOnOffButton.rx.tap
             .subscribe(onNext: { [self] in
                 if isRunning {
-                    stopWatchObject.stopTimer()
+                    stopwatch.stopTimer()
                     stopWatchOnOffButton.backgroundColor = .green
                     stopWatchOnOffButton.setTitle("시작", for: .normal)
                     lapRecords.removeAll()
                     stopWatchResetLabButton.setTitle("재설정", for: .normal)
                     stopWatchResetLabButton.isEnabled = true
                 } else {
-                    stopWatchObject.startTimer()
+                    stopwatch.startTimer()
                     stopWatchOnOffButton.backgroundColor = .red
                     stopWatchResetLabButton.setTitle("랩", for: .normal)
                     stopWatchResetLabButton.backgroundColor = .lightGray
@@ -110,9 +117,9 @@ class ViewController: UIViewController {
         stopWatchResetLabButton.rx.tap
             .subscribe(onNext: { [self] in
                 if isRunning {
-                    stopWatchObject.recordTime()
+                    stopwatch.recordTime()
                 } else {
-                    stopWatchObject.resetTimer()
+                    stopwatch.resetTimer()
                     stopWatchLabel.text = "00:00.00"
                     isRunning = false
                     stopWatchResetLabButton.setTitle("랩", for: .normal)

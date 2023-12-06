@@ -1,21 +1,27 @@
 import Foundation
+import RxSwift
 
 public class Stopwatch: NSObject {
     private var counter: Double = 0.0
     private var timer: Timer?
     private var lapTimes: [Double] = []
-    var timeUpdateHandler: ((String) -> Void)?
-    var recordUpdateHandler: (([String]) -> Void)?
+    private let timeSubject = PublishSubject<String>()
+    private let recordSubject = PublishSubject<[String]>()
+    
+    public var timeUpdate: Observable<String> {
+        return timeSubject.asObservable()
+    }
+    
+    public var recordUpdate: Observable<[String]> {
+        return recordSubject.asObservable()
+    }
     
     func start() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.035, repeats: true) { [weak self] _ in
             guard let self = self else { return }
             self.counter += 0.035
             let timeString = self.timeString(from: self.counter)
-            
-            DispatchQueue.main.async {
-                self.timeUpdateHandler?(timeString)
-            }
+            self.timeSubject.onNext(timeString)
         }
     }
     
@@ -32,7 +38,7 @@ public class Stopwatch: NSObject {
     func record() {
         lapTimes.append(counter)
         let lapTimesString = lapTimes.map { timeString(from: $0) }
-        recordUpdateHandler?(lapTimesString)
+        recordSubject.onNext(lapTimesString)
     }
     
     private func timeString(from counter: Double) -> String {
