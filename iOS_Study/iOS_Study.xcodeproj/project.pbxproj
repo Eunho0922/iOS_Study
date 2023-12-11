@@ -25,6 +25,8 @@
 		D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */; };
 		D17FE9B12B16203A00B8DC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B02B16203A00B8DC1F /* Assets.xcassets */; };
 		D17FE9B42B16203A00B8DC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B22B16203A00B8DC1F /* LaunchScreen.storyboard */; };
+		D1E542B22B26F5FE00030EA2 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E542B12B26F5FE00030EA2 /* TimerViewController.swift */; };
+		D1E542B42B26F99300030EA2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E542B32B26F99300030EA2 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		D17FE9B02B16203A00B8DC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D17FE9B32B16203A00B8DC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D17FE9B52B16203A00B8DC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1E542B12B26F5FE00030EA2 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		D1E542B32B26F99300030EA2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +68,7 @@
 		D140D8DF2B16274900585AE7 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
-				D1DF37092B205E6D001B42E0 /* New Group */,
+				D1DF37092B205E6D001B42E0 /* Timer */,
 				D140D8FA2B18226F00585AE7 /* StopWatch */,
 			);
 			path = Scence;
@@ -152,11 +156,13 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		D1DF37092B205E6D001B42E0 /* New Group */ = {
+		D1DF37092B205E6D001B42E0 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				D1E542B12B26F5FE00030EA2 /* TimerViewController.swift */,
+				D1E542B32B26F99300030EA2 /* TimerView.swift */,
 			);
-			path = "New Group";
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +251,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E542B42B26F99300030EA2 /* TimerView.swift in Sources */,
 				D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */,
+				D1E542B22B26F5FE00030EA2 /* TimerViewController.swift in Sources */,
 				D140D8E92B16B23700585AE7 /* textFieldErrorType.swift in Sources */,
 				D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */,
 				D140D9022B1826B600585AE7 /* MinGaGymKitStopWatch.swift in Sources */,
