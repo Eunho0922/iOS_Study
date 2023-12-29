@@ -68,5 +68,6 @@ public class MindGymStopWatchKit {
     public func recordTime() {
         mainStopwatch.record()
     }
+    
 }
 
