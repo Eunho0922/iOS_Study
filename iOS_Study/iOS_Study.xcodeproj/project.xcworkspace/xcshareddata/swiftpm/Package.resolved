@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "mindgymkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/MaeumgaGym/MindGymKit",
+      "state" : {
+        "revision" : "06af78eefa053189e46c6fe7afde4fd0b712225d",
+        "version" : "0.2.3"
+      }
+    },
+    {
       "identity" : "moya",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/Moya/Moya",

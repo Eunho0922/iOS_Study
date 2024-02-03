@@ -20,11 +20,15 @@
 		D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8FC2B18229300585AE7 /* StopWatchViewModel.swift */; };
 		D140D9002B18259300585AE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D8FF2B18259300585AE7 /* BaseViewController.swift */; };
 		D140D9022B1826B600585AE7 /* MinGaGymKitStopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D140D9012B1826B600585AE7 /* MinGaGymKitStopWatch.swift */; };
+		D17754172B3FEFBE00348980 /* MindGymKit in Frameworks */ = {isa = PBXBuildFile; productRef = D17754162B3FEFBE00348980 /* MindGymKit */; };
 		D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A72B16203800B8DC1F /* AppDelegate.swift */; };
 		D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9A92B16203800B8DC1F /* SceneDelegate.swift */; };
 		D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D17FE9AB2B16203800B8DC1F /* StopWatchViewController.swift */; };
 		D17FE9B12B16203A00B8DC1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B02B16203A00B8DC1F /* Assets.xcassets */; };
 		D17FE9B42B16203A00B8DC1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D17FE9B22B16203A00B8DC1F /* LaunchScreen.storyboard */; };
+		D18B6F7E2B42F8B6007DDAD7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B6F7D2B42F8B6007DDAD7 /* TestViewController.swift */; };
+		D18B6F802B42F8D3007DDAD7 /* MukgenTitleLabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B6F7F2B42F8D3007DDAD7 /* MukgenTitleLabelType.swift */; };
+		D18B6F822B42F930007DDAD7 /* TsefsfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18B6F812B42F930007DDAD7 /* TsefsfViewController.swift */; };
 		D1E542B22B26F5FE00030EA2 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E542B12B26F5FE00030EA2 /* TimerViewController.swift */; };
 		D1E542B42B26F99300030EA2 /* MindGaGymKitTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E542B32B26F99300030EA2 /* MindGaGymKitTimer.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +46,9 @@
 		D17FE9B02B16203A00B8DC1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D17FE9B32B16203A00B8DC1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D17FE9B52B16203A00B8DC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D18B6F7D2B42F8B6007DDAD7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		D18B6F7F2B42F8D3007DDAD7 /* MukgenTitleLabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MukgenTitleLabelType.swift; sourceTree = "<group>"; };
+		D18B6F812B42F930007DDAD7 /* TsefsfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TsefsfViewController.swift; sourceTree = "<group>"; };
 		D1E542B12B26F5FE00030EA2 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D1E542B32B26F99300030EA2 /* MindGaGymKitTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindGaGymKitTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +64,7 @@
 				D140D8F92B16B73D00585AE7 /* Then in Frameworks */,
 				D140D8F52B16B72A00585AE7 /* SnapKit in Frameworks */,
 				D140D8EB2B16B30200585AE7 /* RxBlocking in Frameworks */,
+				D17754172B3FEFBE00348980 /* MindGymKit in Frameworks */,
 				D140D8F72B16B72A00585AE7 /* SnapKit-Dynamic in Frameworks */,
 				D140D8ED2B16B30200585AE7 /* RxBlocking-Dynamic in Frameworks */,
 			);
@@ -68,6 +76,7 @@
 		D140D8DF2B16274900585AE7 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
+				D17753F22B3F98A900348980 /* GropuActivities */,
 				D1DF37092B205E6D001B42E0 /* Timer */,
 				D140D8FA2B18226F00585AE7 /* StopWatch */,
 			);
@@ -78,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				D140D8FF2B18259300585AE7 /* BaseViewController.swift */,
+				D18B6F7F2B42F8D3007DDAD7 /* MukgenTitleLabelType.swift */,
+				D18B6F7D2B42F8B6007DDAD7 /* TestViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -107,6 +118,14 @@
 				D140D9012B1826B600585AE7 /* MinGaGymKitStopWatch.swift */,
 			);
 			path = StopWatch;
+			sourceTree = "<group>";
+		};
+		D17753F22B3F98A900348980 /* GropuActivities */ = {
+			isa = PBXGroup;
+			children = (
+				D18B6F812B42F930007DDAD7 /* TsefsfViewController.swift */,
+			);
+			path = GropuActivities;
 			sourceTree = "<group>";
 		};
 		D17FE99B2B16203800B8DC1F = {
@@ -190,6 +209,7 @@
 				D140D8F42B16B72A00585AE7 /* SnapKit */,
 				D140D8F62B16B72A00585AE7 /* SnapKit-Dynamic */,
 				D140D8F82B16B73D00585AE7 /* Then */,
+				D17754162B3FEFBE00348980 /* MindGymKit */,
 			);
 			productName = iOS_Study;
 			productReference = D17FE9A42B16203800B8DC1F /* iOS_Study.app */;
@@ -224,6 +244,7 @@
 				D17FE9D02B16227900B8DC1F /* XCRemoteSwiftPackageReference "Then" */,
 				D17FE9D32B16228500B8DC1F /* XCRemoteSwiftPackageReference "SnapKit" */,
 				D17FE9D82B16229A00B8DC1F /* XCRemoteSwiftPackageReference "Moya" */,
+				D17754152B3FEFBE00348980 /* XCRemoteSwiftPackageReference "MindGymKit" */,
 			);
 			productRefGroup = D17FE9A52B16203800B8DC1F /* Products */;
 			projectDirPath = "";
@@ -253,12 +274,15 @@
 			files = (
 				D1E542B42B26F99300030EA2 /* MindGaGymKitTimer.swift in Sources */,
 				D140D8FD2B18229300585AE7 /* StopWatchViewModel.swift in Sources */,
+				D18B6F7E2B42F8B6007DDAD7 /* TestViewController.swift in Sources */,
 				D1E542B22B26F5FE00030EA2 /* TimerViewController.swift in Sources */,
 				D140D8E92B16B23700585AE7 /* textFieldErrorType.swift in Sources */,
 				D17FE9AC2B16203800B8DC1F /* StopWatchViewController.swift in Sources */,
 				D140D9022B1826B600585AE7 /* MinGaGymKitStopWatch.swift in Sources */,
 				D17FE9A82B16203800B8DC1F /* AppDelegate.swift in Sources */,
+				D18B6F802B42F8D3007DDAD7 /* MukgenTitleLabelType.swift in Sources */,
 				D140D8E72B16B20200585AE7 /* CustomTF.swift in Sources */,
+				D18B6F822B42F930007DDAD7 /* TsefsfViewController.swift in Sources */,
 				D140D9002B18259300585AE7 /* BaseViewController.swift in Sources */,
 				D17FE9AA2B16203800B8DC1F /* SceneDelegate.swift in Sources */,
 			);
@@ -475,6 +499,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		D17754152B3FEFBE00348980 /* XCRemoteSwiftPackageReference "MindGymKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MaeumgaGym/MindGymKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.3;
+			};
+		};
 		D17FE9BB2B16226D00B8DC1F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -544,6 +576,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D17FE9D02B16227900B8DC1F /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		D17754162B3FEFBE00348980 /* MindGymKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D17754152B3FEFBE00348980 /* XCRemoteSwiftPackageReference "MindGymKit" */;
+			productName = MindGymKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

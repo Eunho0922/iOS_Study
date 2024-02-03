@@ -1,8 +1,22 @@
+//import UIKit
+//import SnapKit
+//import Then
 //
-//  TsefsfViewController.swift
-//  iOS_Study
-//
-//  Created by 이은호 on 1/1/24.
-//
-
-import Foundation
+//class TsefsfViewController: UIViewController {
+//    private let titleLabel = MukgenTitleLabel(type: .startTitle)
+//    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        view.backgroundColor = .white
+//        
+//        
+//        
+//        view.addSubview(titleLabel)
+//        
+//        titleLabel.snp.makeConstraints {
+//            $0.leading.equalToSuperview().offset(20.0)
+//            $0.top.equalToSuperview().offset(123.0)
+//        }
+//    }
+//}
